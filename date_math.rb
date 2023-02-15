@@ -4,4 +4,11 @@
 # 
 # Output:
 #   "Ruby is 108937 days old!"
-#
+
+require "date"
+
+days = Date.today - Date.parse("December 21, 1995")
+num = days.to_i
+
+sentence = "Ruby is #{num} days old!"
+puts sentence
